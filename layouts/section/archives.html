@@ -21,7 +21,7 @@
                 {{- end }}
                 {{- end }}
                 {{- if isset .Params "tags" }}
-                {{- range .Params.tags }}
+                {{- range sort .Params.tags }}
                 <li class="taxonomies-item"><a href="{{ "/" | relURL }}tags/{{ . | urlize }}/"><i class="fas fa-tag"></i>{{ . }}</a></li>
                 {{- end }}
                 {{- end }}
