@@ -25,7 +25,14 @@ pre, code {
   background-color: lightgray;
 }
 pre {
+  white-space: pre-wrap;
   padding: 4px;
+}
+@media screen and (max-width: 768px){
+  pre {
+    white-space: pre;
+    overflow: auto;
+  }
 }
 code {
   padding: 0px 4px 0px 4px;
