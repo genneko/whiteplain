@@ -128,6 +128,17 @@ blockquote blockquote blockquote blockquote {
   font-size: 1.6em;
 }
 
+/* Section Heading */
+.section-heading .breadcrumb {
+  border: solid 1px lightgray;
+  border-style: none none solid none;
+  margin-bottom: 1.5em;
+  padding: 1ex 0 1ex 0;
+}
+.section-heading .description {
+  font-size: 12pt;
+}
+
 /* Code highlight */
 .highlight pre, .highlight code {
   background-color: inherit;

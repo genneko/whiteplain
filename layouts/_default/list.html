@@ -5,8 +5,13 @@
     <a href="{{ "/" | relURL }}{{ .Data.Plural | urlize }}/">{{ .Data.Plural | humanize }}</a> / {{ .Data.Term | humanize }}
   </div>
   {{- else if eq .Kind "section" }}
-  <div class="breadcrumb">
-    {{ .Title }}
+  <div class="section-heading">
+    <div class="breadcrumb">
+      {{ .Title }}
+      <div class="description">
+        {{ .Description }}
+      </div>
+    </div>
   </div>
   {{- end }}
   <div class="main" role="main">
