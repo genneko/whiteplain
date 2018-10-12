@@ -34,6 +34,10 @@ googleAnalytics = "Toracking ID"
 copyright = "&copy; Copyright 2017 Your name"
 
 [params]
+  # whether to use CDN or local file for fontawesome
+  #useCDN = false
+  # whether to include external sharing scripts and icons for twitter, facebook and co.
+  #showShareIcons = false
   # Date format
   #dateFormat = "January 2, 2006"
 
@@ -143,6 +147,14 @@ Your site direcctory
     │   └── syntax.css
     └── js
         └── custom.js
+```
+
+If you want to use libraries and frameworks, create `layouts/partials/head_custom.html`. Its contents are read into `<head>...</head>`.
+```
+Your site direcctory
+├── layouts
+     └── partials
+         └── head_custom.html
 ```
 
 ### Customize Share Buttons
