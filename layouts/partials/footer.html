@@ -10,7 +10,7 @@
     </li>
     {{- end }}
     {{- range .Site.Menus.footer }}
-    <li class="site-footer-item-{{ .Identifier }}"><a href="{{ .URL | safeURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+    <li class="site-footer-item-{{ .Identifier }}"><a href="{{ .URL | relLangURL | safeURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
     {{- end }}
   </ul>
   <div class="powerdby">
