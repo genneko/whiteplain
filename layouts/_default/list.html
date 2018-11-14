@@ -38,7 +38,7 @@
           {{- if .Params.tags }}
           {{- range sort .Params.tags }}
           <li class="article-meta-tags">
-            <a href="{{ "/" | relURL }}tags/{{ . | urlize }}/">
+            <a href="{{ "/" | relLangURL }}tags/{{ . | urlize }}/">
               <i class="fas fa-tag"></i>
               {{ . }}
             </a>&nbsp;
